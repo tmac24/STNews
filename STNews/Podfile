@@ -1,0 +1,12 @@
+target 'STNews' do
+  
+    pod 'AFNetworking'
+    pod 'MJExtension'
+    pod 'SDWebImage'
+    pod 'MJRefresh'
+    pod 'MBProgressHUD'
+    pod 'ReactiveCocoa','2.5'
+    pod 'FDFullscreenPopGesture'
+    pod 'UITableView+FDTemplateLayoutCell'
+    
+end
