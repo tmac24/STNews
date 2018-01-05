@@ -15,6 +15,30 @@
 		1E48A1381FFF20E600D69ECF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E48A1361FFF20E600D69ECF /* LaunchScreen.storyboard */; };
 		1E48A13B1FFF20E600D69ECF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E48A13A1FFF20E600D69ECF /* main.m */; };
 		1E48A1451FFF20E700D69ECF /* STNewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E48A1441FFF20E700D69ECF /* STNewsTests.m */; };
+		1E48A1581FFF527800D69ECF /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E48A1571FFF527800D69ECF /* libstdc++.tbd */; };
+		1E48A15A1FFF528400D69ECF /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E48A1591FFF528400D69ECF /* libz.tbd */; };
+		1E48A15C1FFF529C00D69ECF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E48A15B1FFF529C00D69ECF /* CoreData.framework */; };
+		1E48A15E1FFF52B000D69ECF /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E48A15D1FFF52B000D69ECF /* CoreTelephony.framework */; };
+		1E48A1601FFF52B800D69ECF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E48A15F1FFF52B800D69ECF /* SystemConfiguration.framework */; };
+		1E48A1681FFF544700D69ECF /* NSDate+STExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E48A1631FFF544700D69ECF /* NSDate+STExtension.m */; };
+		1E48A1691FFF544700D69ECF /* UIBarButtonItem+STExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E48A1651FFF544700D69ECF /* UIBarButtonItem+STExtension.m */; };
+		1E48A16A1FFF544700D69ECF /* UIView+STExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E48A1671FFF544700D69ECF /* UIView+STExtension.m */; };
+		1E48A16C1FFF560500D69ECF /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E48A16B1FFF560500D69ECF /* Foundation+Log.m */; };
+		1E48A1791FFF577600D69ECF /* STNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E48A1701FFF577600D69ECF /* STNavigationController.m */; };
+		1E48A17A1FFF577600D69ECF /* STTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E48A1721FFF577600D69ECF /* STTabBarController.m */; };
+		1E48A1831FFF5BE600D69ECF /* STPushGuideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E48A17E1FFF5BE500D69ECF /* STPushGuideView.xib */; };
+		1E48A1841FFF5BE600D69ECF /* STPushGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E48A17F1FFF5BE500D69ECF /* STPushGuideView.m */; };
+		1E48A1851FFF5BE600D69ECF /* STTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E48A1801FFF5BE500D69ECF /* STTabBar.m */; };
+		1E48A1891FFF5D4800D69ECF /* NewsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E48A1871FFF5D4800D69ECF /* NewsController.m */; };
+		1E48A18A1FFF5D4800D69ECF /* NewsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E48A1881FFF5D4800D69ECF /* NewsController.xib */; };
+		1E48A18F1FFF5DA200D69ECF /* ListenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E48A18D1FFF5DA200D69ECF /* ListenController.m */; };
+		1E48A1901FFF5DA200D69ECF /* ListenController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E48A18E1FFF5DA200D69ECF /* ListenController.xib */; };
+		1E48A1941FFF5DC200D69ECF /* ReadController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E48A1921FFF5DC200D69ECF /* ReadController.m */; };
+		1E48A1951FFF5DC200D69ECF /* ReadController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E48A1931FFF5DC200D69ECF /* ReadController.xib */; };
+		1E48A1991FFF5DF200D69ECF /* FindController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E48A1971FFF5DF200D69ECF /* FindController.m */; };
+		1E48A19A1FFF5DF200D69ECF /* FindController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E48A1981FFF5DF200D69ECF /* FindController.xib */; };
+		1E48A19E1FFF5E0700D69ECF /* MineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E48A19C1FFF5E0700D69ECF /* MineController.m */; };
+		1E48A19F1FFF5E0700D69ECF /* MineController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E48A19D1FFF5E0700D69ECF /* MineController.xib */; };
 		B7CABD316AC991F90C9F28D5 /* libPods-STNews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7774D32893984A247DD0F13D /* libPods-STNews.a */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +67,44 @@
 		1E48A1401FFF20E700D69ECF /* STNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E48A1441FFF20E700D69ECF /* STNewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STNewsTests.m; sourceTree = "<group>"; };
 		1E48A1461FFF20E700D69ECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E48A1551FFF517900D69ECF /* NewsPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsPrefix.pch; sourceTree = "<group>"; };
+		1E48A1561FFF51EA00D69ECF /* STEasyMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STEasyMacro.h; sourceTree = "<group>"; };
+		1E48A1571FFF527800D69ECF /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		1E48A1591FFF528400D69ECF /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		1E48A15B1FFF529C00D69ECF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1E48A15D1FFF52B000D69ECF /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		1E48A15F1FFF52B800D69ECF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1E48A1621FFF544700D69ECF /* NSDate+STExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+STExtension.h"; sourceTree = "<group>"; };
+		1E48A1631FFF544700D69ECF /* NSDate+STExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+STExtension.m"; sourceTree = "<group>"; };
+		1E48A1641FFF544700D69ECF /* UIBarButtonItem+STExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+STExtension.h"; sourceTree = "<group>"; };
+		1E48A1651FFF544700D69ECF /* UIBarButtonItem+STExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+STExtension.m"; sourceTree = "<group>"; };
+		1E48A1661FFF544700D69ECF /* UIView+STExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+STExtension.h"; sourceTree = "<group>"; };
+		1E48A1671FFF544700D69ECF /* UIView+STExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+STExtension.m"; sourceTree = "<group>"; };
+		1E48A16B1FFF560500D69ECF /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		1E48A16F1FFF577600D69ECF /* STNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STNavigationController.h; sourceTree = "<group>"; };
+		1E48A1701FFF577600D69ECF /* STNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STNavigationController.m; sourceTree = "<group>"; };
+		1E48A1711FFF577600D69ECF /* STTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTabBarController.h; sourceTree = "<group>"; };
+		1E48A1721FFF577600D69ECF /* STTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STTabBarController.m; sourceTree = "<group>"; };
+		1E48A17E1FFF5BE500D69ECF /* STPushGuideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STPushGuideView.xib; sourceTree = "<group>"; };
+		1E48A17F1FFF5BE500D69ECF /* STPushGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPushGuideView.m; sourceTree = "<group>"; };
+		1E48A1801FFF5BE500D69ECF /* STTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STTabBar.m; sourceTree = "<group>"; };
+		1E48A1811FFF5BE500D69ECF /* STTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTabBar.h; sourceTree = "<group>"; };
+		1E48A1821FFF5BE500D69ECF /* STPushGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPushGuideView.h; sourceTree = "<group>"; };
+		1E48A1861FFF5D4800D69ECF /* NewsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsController.h; sourceTree = "<group>"; };
+		1E48A1871FFF5D4800D69ECF /* NewsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsController.m; sourceTree = "<group>"; };
+		1E48A1881FFF5D4800D69ECF /* NewsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsController.xib; sourceTree = "<group>"; };
+		1E48A18C1FFF5DA200D69ECF /* ListenController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListenController.h; sourceTree = "<group>"; };
+		1E48A18D1FFF5DA200D69ECF /* ListenController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListenController.m; sourceTree = "<group>"; };
+		1E48A18E1FFF5DA200D69ECF /* ListenController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListenController.xib; sourceTree = "<group>"; };
+		1E48A1911FFF5DC200D69ECF /* ReadController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadController.h; sourceTree = "<group>"; };
+		1E48A1921FFF5DC200D69ECF /* ReadController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadController.m; sourceTree = "<group>"; };
+		1E48A1931FFF5DC200D69ECF /* ReadController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReadController.xib; sourceTree = "<group>"; };
+		1E48A1961FFF5DF200D69ECF /* FindController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindController.h; sourceTree = "<group>"; };
+		1E48A1971FFF5DF200D69ECF /* FindController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindController.m; sourceTree = "<group>"; };
+		1E48A1981FFF5DF200D69ECF /* FindController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FindController.xib; sourceTree = "<group>"; };
+		1E48A19B1FFF5E0700D69ECF /* MineController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineController.h; sourceTree = "<group>"; };
+		1E48A19C1FFF5E0700D69ECF /* MineController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineController.m; sourceTree = "<group>"; };
+		1E48A19D1FFF5E0700D69ECF /* MineController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineController.xib; sourceTree = "<group>"; };
 		58FD34A26DBC9DD179C43FE3 /* Pods-STNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-STNews/Pods-STNews.debug.xcconfig"; sourceTree = "<group>"; };
 		7774D32893984A247DD0F13D /* libPods-STNews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-STNews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF4E9CC7A90400878F3A16B1 /* Pods-STNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-STNews/Pods-STNews.release.xcconfig"; sourceTree = "<group>"; };
@@ -53,6 +115,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E48A1601FFF52B800D69ECF /* SystemConfiguration.framework in Frameworks */,
+				1E48A15E1FFF52B000D69ECF /* CoreTelephony.framework in Frameworks */,
+				1E48A15C1FFF529C00D69ECF /* CoreData.framework in Frameworks */,
+				1E48A15A1FFF528400D69ECF /* libz.tbd in Frameworks */,
+				1E48A1581FFF527800D69ECF /* libstdc++.tbd in Frameworks */,
 				B7CABD316AC991F90C9F28D5 /* libPods-STNews.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,16 +157,14 @@
 		1E48A1271FFF20E600D69ECF /* STNews */ = {
 			isa = PBXGroup;
 			children = (
+				1E48A14F1FFF497A00D69ECF /* News */,
+				1E48A1541FFF498D00D69ECF /* Tools */,
+				1E48A16D1FFF577600D69ECF /* Main */,
 				1E48A1281FFF20E600D69ECF /* AppDelegate.h */,
 				1E48A1291FFF20E600D69ECF /* AppDelegate.m */,
-				1E48A12B1FFF20E600D69ECF /* ViewController.h */,
-				1E48A12C1FFF20E600D69ECF /* ViewController.m */,
-				1E48A12E1FFF20E600D69ECF /* Main.storyboard */,
-				1E48A1341FFF20E600D69ECF /* Assets.xcassets */,
-				1E48A1361FFF20E600D69ECF /* LaunchScreen.storyboard */,
+				1E48A1551FFF517900D69ECF /* NewsPrefix.pch */,
 				1E48A1391FFF20E600D69ECF /* Info.plist */,
-				1E48A13A1FFF20E600D69ECF /* main.m */,
-				1E48A1311FFF20E600D69ECF /* STNews.xcdatamodeld */,
+				1E48A1531FFF498300D69ECF /* Other */,
 			);
 			path = STNews;
 			sourceTree = "<group>";
@@ -111,6 +176,129 @@
 				1E48A1461FFF20E700D69ECF /* Info.plist */,
 			);
 			path = STNewsTests;
+			sourceTree = "<group>";
+		};
+		1E48A14F1FFF497A00D69ECF /* News */ = {
+			isa = PBXGroup;
+			children = (
+				1E48A18B1FFF5D8300D69ECF /* OtherVC */,
+				1E48A1501FFF497A00D69ECF /* Controller */,
+				1E48A1511FFF497A00D69ECF /* Model */,
+				1E48A1521FFF497A00D69ECF /* View */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		1E48A1501FFF497A00D69ECF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1E48A1861FFF5D4800D69ECF /* NewsController.h */,
+				1E48A1871FFF5D4800D69ECF /* NewsController.m */,
+				1E48A1881FFF5D4800D69ECF /* NewsController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1E48A1511FFF497A00D69ECF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1E48A1521FFF497A00D69ECF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1E48A1531FFF498300D69ECF /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				1E48A12B1FFF20E600D69ECF /* ViewController.h */,
+				1E48A12C1FFF20E600D69ECF /* ViewController.m */,
+				1E48A1341FFF20E600D69ECF /* Assets.xcassets */,
+				1E48A1361FFF20E600D69ECF /* LaunchScreen.storyboard */,
+				1E48A13A1FFF20E600D69ECF /* main.m */,
+				1E48A12E1FFF20E600D69ECF /* Main.storyboard */,
+				1E48A1311FFF20E600D69ECF /* STNews.xcdatamodeld */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		1E48A1541FFF498D00D69ECF /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				1E48A1611FFF544700D69ECF /* Category */,
+				1E48A1561FFF51EA00D69ECF /* STEasyMacro.h */,
+				1E48A16B1FFF560500D69ECF /* Foundation+Log.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		1E48A1611FFF544700D69ECF /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				1E48A1621FFF544700D69ECF /* NSDate+STExtension.h */,
+				1E48A1631FFF544700D69ECF /* NSDate+STExtension.m */,
+				1E48A1641FFF544700D69ECF /* UIBarButtonItem+STExtension.h */,
+				1E48A1651FFF544700D69ECF /* UIBarButtonItem+STExtension.m */,
+				1E48A1661FFF544700D69ECF /* UIView+STExtension.h */,
+				1E48A1671FFF544700D69ECF /* UIView+STExtension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		1E48A16D1FFF577600D69ECF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1E48A16E1FFF577600D69ECF /* Controller */,
+				1E48A1731FFF577600D69ECF /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1E48A16E1FFF577600D69ECF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1E48A16F1FFF577600D69ECF /* STNavigationController.h */,
+				1E48A1701FFF577600D69ECF /* STNavigationController.m */,
+				1E48A1711FFF577600D69ECF /* STTabBarController.h */,
+				1E48A1721FFF577600D69ECF /* STTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1E48A1731FFF577600D69ECF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1E48A1821FFF5BE500D69ECF /* STPushGuideView.h */,
+				1E48A17F1FFF5BE500D69ECF /* STPushGuideView.m */,
+				1E48A17E1FFF5BE500D69ECF /* STPushGuideView.xib */,
+				1E48A1811FFF5BE500D69ECF /* STTabBar.h */,
+				1E48A1801FFF5BE500D69ECF /* STTabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1E48A18B1FFF5D8300D69ECF /* OtherVC */ = {
+			isa = PBXGroup;
+			children = (
+				1E48A18C1FFF5DA200D69ECF /* ListenController.h */,
+				1E48A18D1FFF5DA200D69ECF /* ListenController.m */,
+				1E48A18E1FFF5DA200D69ECF /* ListenController.xib */,
+				1E48A1911FFF5DC200D69ECF /* ReadController.h */,
+				1E48A1921FFF5DC200D69ECF /* ReadController.m */,
+				1E48A1931FFF5DC200D69ECF /* ReadController.xib */,
+				1E48A1961FFF5DF200D69ECF /* FindController.h */,
+				1E48A1971FFF5DF200D69ECF /* FindController.m */,
+				1E48A1981FFF5DF200D69ECF /* FindController.xib */,
+				1E48A19B1FFF5E0700D69ECF /* MineController.h */,
+				1E48A19C1FFF5E0700D69ECF /* MineController.m */,
+				1E48A19D1FFF5E0700D69ECF /* MineController.xib */,
+			);
+			path = OtherVC;
 			sourceTree = "<group>";
 		};
 		52B593310F5110B9F476DAB5 /* Pods */ = {
@@ -125,6 +313,11 @@
 		7FE6F7C6FFC535A8F0209F8B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1E48A15F1FFF52B800D69ECF /* SystemConfiguration.framework */,
+				1E48A15D1FFF52B000D69ECF /* CoreTelephony.framework */,
+				1E48A15B1FFF529C00D69ECF /* CoreData.framework */,
+				1E48A1591FFF528400D69ECF /* libz.tbd */,
+				1E48A1571FFF527800D69ECF /* libstdc++.tbd */,
 				7774D32893984A247DD0F13D /* libPods-STNews.a */,
 			);
 			name = Frameworks;
@@ -215,9 +408,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E48A19A1FFF5DF200D69ECF /* FindController.xib in Resources */,
+				1E48A1831FFF5BE600D69ECF /* STPushGuideView.xib in Resources */,
 				1E48A1381FFF20E600D69ECF /* LaunchScreen.storyboard in Resources */,
+				1E48A18A1FFF5D4800D69ECF /* NewsController.xib in Resources */,
 				1E48A1351FFF20E600D69ECF /* Assets.xcassets in Resources */,
+				1E48A1901FFF5DA200D69ECF /* ListenController.xib in Resources */,
 				1E48A1301FFF20E600D69ECF /* Main.storyboard in Resources */,
+				1E48A1951FFF5DC200D69ECF /* ReadController.xib in Resources */,
+				1E48A19F1FFF5E0700D69ECF /* MineController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,10 +488,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E48A1991FFF5DF200D69ECF /* FindController.m in Sources */,
+				1E48A1891FFF5D4800D69ECF /* NewsController.m in Sources */,
+				1E48A17A1FFF577600D69ECF /* STTabBarController.m in Sources */,
+				1E48A18F1FFF5DA200D69ECF /* ListenController.m in Sources */,
+				1E48A1791FFF577600D69ECF /* STNavigationController.m in Sources */,
+				1E48A1681FFF544700D69ECF /* NSDate+STExtension.m in Sources */,
 				1E48A12D1FFF20E600D69ECF /* ViewController.m in Sources */,
 				1E48A12A1FFF20E600D69ECF /* AppDelegate.m in Sources */,
 				1E48A13B1FFF20E600D69ECF /* main.m in Sources */,
+				1E48A1841FFF5BE600D69ECF /* STPushGuideView.m in Sources */,
+				1E48A1941FFF5DC200D69ECF /* ReadController.m in Sources */,
 				1E48A1331FFF20E600D69ECF /* STNews.xcdatamodeld in Sources */,
+				1E48A1851FFF5BE600D69ECF /* STTabBar.m in Sources */,
+				1E48A16A1FFF544700D69ECF /* UIView+STExtension.m in Sources */,
+				1E48A1691FFF544700D69ECF /* UIBarButtonItem+STExtension.m in Sources */,
+				1E48A19E1FFF5E0700D69ECF /* MineController.m in Sources */,
+				1E48A16C1FFF560500D69ECF /* Foundation+Log.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +657,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3V39Q7F96X;
+				GCC_PREFIX_HEADER = STNews/NewsPrefix.pch;
 				INFOPLIST_FILE = STNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = suntao.STNews;
@@ -460,6 +673,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3V39Q7F96X;
+				GCC_PREFIX_HEADER = STNews/NewsPrefix.pch;
 				INFOPLIST_FILE = STNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = suntao.STNews;
