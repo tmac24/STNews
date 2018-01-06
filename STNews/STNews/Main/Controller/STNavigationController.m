@@ -34,8 +34,8 @@
     // 当导航栏用在STNavigationController中, appearance设置才会生效
     //    UINavigationBar *bar = [UINavigationBar appearanceWhenContainedIn:[self class], nil];
     UINavigationBar *bar = [UINavigationBar appearance];
-    [bar setBackgroundColor:[UIColor colorWithRed:183/255.0 green:20/255.0 blue:28/255.0 alpha:1]];
-    bar.backgroundColor = [UIColor colorWithRed:183/255.0 green:20/255.0 blue:28/255.0 alpha:1];
+    bar.barTintColor = STRGBColor(205, 77, 71);
+
 //    [bar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
 }
 

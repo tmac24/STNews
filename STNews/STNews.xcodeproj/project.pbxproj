@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E2BD14F20009955009DA12D /* STConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2BD14E20009955009DA12D /* STConst.m */; };
+		1E2BD15120009AA5009DA12D /* NewsURLs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E2BD15020009AA5009DA12D /* NewsURLs.plist */; };
+		1E2BD1572000AAF9009DA12D /* NewsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E2BD1562000AAF9009DA12D /* NewsController.xib */; };
+		1E2BD15A2000AFAE009DA12D /* STTitleLablel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2BD1592000AFAE009DA12D /* STTitleLablel.m */; };
 		1E48A12A1FFF20E600D69ECF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E48A1291FFF20E600D69ECF /* AppDelegate.m */; };
 		1E48A12D1FFF20E600D69ECF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E48A12C1FFF20E600D69ECF /* ViewController.m */; };
 		1E48A1301FFF20E600D69ECF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E48A12E1FFF20E600D69ECF /* Main.storyboard */; };
@@ -30,7 +34,6 @@
 		1E48A1841FFF5BE600D69ECF /* STPushGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E48A17F1FFF5BE500D69ECF /* STPushGuideView.m */; };
 		1E48A1851FFF5BE600D69ECF /* STTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E48A1801FFF5BE500D69ECF /* STTabBar.m */; };
 		1E48A1891FFF5D4800D69ECF /* NewsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E48A1871FFF5D4800D69ECF /* NewsController.m */; };
-		1E48A18A1FFF5D4800D69ECF /* NewsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E48A1881FFF5D4800D69ECF /* NewsController.xib */; };
 		1E48A18F1FFF5DA200D69ECF /* ListenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E48A18D1FFF5DA200D69ECF /* ListenController.m */; };
 		1E48A1901FFF5DA200D69ECF /* ListenController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E48A18E1FFF5DA200D69ECF /* ListenController.xib */; };
 		1E48A1941FFF5DC200D69ECF /* ReadController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E48A1921FFF5DC200D69ECF /* ReadController.m */; };
@@ -39,6 +42,8 @@
 		1E48A19A1FFF5DF200D69ECF /* FindController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E48A1981FFF5DF200D69ECF /* FindController.xib */; };
 		1E48A19E1FFF5E0700D69ECF /* MineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E48A19C1FFF5E0700D69ECF /* MineController.m */; };
 		1E48A19F1FFF5E0700D69ECF /* MineController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E48A19D1FFF5E0700D69ECF /* MineController.xib */; };
+		1EF54ABD20006BA50020F767 /* NewsTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF54ABB20006BA50020F767 /* NewsTableController.m */; };
+		1EF54AC020006C7E0020F767 /* NewsTableController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EF54ABF20006C7E0020F767 /* NewsTableController.storyboard */; };
 		B7CABD316AC991F90C9F28D5 /* libPods-STNews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7774D32893984A247DD0F13D /* libPods-STNews.a */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +58,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E2BD14D20009955009DA12D /* STConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STConst.h; sourceTree = "<group>"; };
+		1E2BD14E20009955009DA12D /* STConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STConst.m; sourceTree = "<group>"; };
+		1E2BD15020009AA5009DA12D /* NewsURLs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NewsURLs.plist; sourceTree = "<group>"; };
+		1E2BD1562000AAF9009DA12D /* NewsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsController.xib; sourceTree = "<group>"; };
+		1E2BD1582000AFAE009DA12D /* STTitleLablel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STTitleLablel.h; sourceTree = "<group>"; };
+		1E2BD1592000AFAE009DA12D /* STTitleLablel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STTitleLablel.m; sourceTree = "<group>"; };
 		1E48A1251FFF20E600D69ECF /* STNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E48A1281FFF20E600D69ECF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1E48A1291FFF20E600D69ECF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -92,7 +103,6 @@
 		1E48A1821FFF5BE500D69ECF /* STPushGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPushGuideView.h; sourceTree = "<group>"; };
 		1E48A1861FFF5D4800D69ECF /* NewsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsController.h; sourceTree = "<group>"; };
 		1E48A1871FFF5D4800D69ECF /* NewsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsController.m; sourceTree = "<group>"; };
-		1E48A1881FFF5D4800D69ECF /* NewsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsController.xib; sourceTree = "<group>"; };
 		1E48A18C1FFF5DA200D69ECF /* ListenController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListenController.h; sourceTree = "<group>"; };
 		1E48A18D1FFF5DA200D69ECF /* ListenController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListenController.m; sourceTree = "<group>"; };
 		1E48A18E1FFF5DA200D69ECF /* ListenController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListenController.xib; sourceTree = "<group>"; };
@@ -105,6 +115,9 @@
 		1E48A19B1FFF5E0700D69ECF /* MineController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineController.h; sourceTree = "<group>"; };
 		1E48A19C1FFF5E0700D69ECF /* MineController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineController.m; sourceTree = "<group>"; };
 		1E48A19D1FFF5E0700D69ECF /* MineController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineController.xib; sourceTree = "<group>"; };
+		1EF54ABA20006BA50020F767 /* NewsTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsTableController.h; sourceTree = "<group>"; };
+		1EF54ABB20006BA50020F767 /* NewsTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsTableController.m; sourceTree = "<group>"; };
+		1EF54ABF20006C7E0020F767 /* NewsTableController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewsTableController.storyboard; sourceTree = "<group>"; };
 		58FD34A26DBC9DD179C43FE3 /* Pods-STNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-STNews/Pods-STNews.debug.xcconfig"; sourceTree = "<group>"; };
 		7774D32893984A247DD0F13D /* libPods-STNews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-STNews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF4E9CC7A90400878F3A16B1 /* Pods-STNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-STNews/Pods-STNews.release.xcconfig"; sourceTree = "<group>"; };
@@ -164,6 +177,7 @@
 				1E48A1291FFF20E600D69ECF /* AppDelegate.m */,
 				1E48A1551FFF517900D69ECF /* NewsPrefix.pch */,
 				1E48A1391FFF20E600D69ECF /* Info.plist */,
+				1E2BD15020009AA5009DA12D /* NewsURLs.plist */,
 				1E48A1531FFF498300D69ECF /* Other */,
 			);
 			path = STNews;
@@ -194,7 +208,10 @@
 			children = (
 				1E48A1861FFF5D4800D69ECF /* NewsController.h */,
 				1E48A1871FFF5D4800D69ECF /* NewsController.m */,
-				1E48A1881FFF5D4800D69ECF /* NewsController.xib */,
+				1E2BD1562000AAF9009DA12D /* NewsController.xib */,
+				1EF54ABA20006BA50020F767 /* NewsTableController.h */,
+				1EF54ABB20006BA50020F767 /* NewsTableController.m */,
+				1EF54ABF20006C7E0020F767 /* NewsTableController.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -232,6 +249,8 @@
 			children = (
 				1E48A1611FFF544700D69ECF /* Category */,
 				1E48A1561FFF51EA00D69ECF /* STEasyMacro.h */,
+				1E2BD14D20009955009DA12D /* STConst.h */,
+				1E2BD14E20009955009DA12D /* STConst.m */,
 				1E48A16B1FFF560500D69ECF /* Foundation+Log.m */,
 			);
 			path = Tools;
@@ -246,6 +265,8 @@
 				1E48A1651FFF544700D69ECF /* UIBarButtonItem+STExtension.m */,
 				1E48A1661FFF544700D69ECF /* UIView+STExtension.h */,
 				1E48A1671FFF544700D69ECF /* UIView+STExtension.m */,
+				1E2BD1582000AFAE009DA12D /* STTitleLablel.h */,
+				1E2BD1592000AFAE009DA12D /* STTitleLablel.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -410,12 +431,14 @@
 			files = (
 				1E48A19A1FFF5DF200D69ECF /* FindController.xib in Resources */,
 				1E48A1831FFF5BE600D69ECF /* STPushGuideView.xib in Resources */,
+				1E2BD15120009AA5009DA12D /* NewsURLs.plist in Resources */,
 				1E48A1381FFF20E600D69ECF /* LaunchScreen.storyboard in Resources */,
-				1E48A18A1FFF5D4800D69ECF /* NewsController.xib in Resources */,
+				1E2BD1572000AAF9009DA12D /* NewsController.xib in Resources */,
 				1E48A1351FFF20E600D69ECF /* Assets.xcassets in Resources */,
 				1E48A1901FFF5DA200D69ECF /* ListenController.xib in Resources */,
 				1E48A1301FFF20E600D69ECF /* Main.storyboard in Resources */,
 				1E48A1951FFF5DC200D69ECF /* ReadController.xib in Resources */,
+				1EF54AC020006C7E0020F767 /* NewsTableController.storyboard in Resources */,
 				1E48A19F1FFF5E0700D69ECF /* MineController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,10 +522,13 @@
 				1E48A13B1FFF20E600D69ECF /* main.m in Sources */,
 				1E48A1841FFF5BE600D69ECF /* STPushGuideView.m in Sources */,
 				1E48A1941FFF5DC200D69ECF /* ReadController.m in Sources */,
+				1E2BD15A2000AFAE009DA12D /* STTitleLablel.m in Sources */,
 				1E48A1331FFF20E600D69ECF /* STNews.xcdatamodeld in Sources */,
+				1E2BD14F20009955009DA12D /* STConst.m in Sources */,
 				1E48A1851FFF5BE600D69ECF /* STTabBar.m in Sources */,
 				1E48A16A1FFF544700D69ECF /* UIView+STExtension.m in Sources */,
 				1E48A1691FFF544700D69ECF /* UIBarButtonItem+STExtension.m in Sources */,
+				1EF54ABD20006BA50020F767 /* NewsTableController.m in Sources */,
 				1E48A19E1FFF5E0700D69ECF /* MineController.m in Sources */,
 				1E48A16C1FFF560500D69ECF /* Foundation+Log.m in Sources */,
 			);

@@ -13,6 +13,7 @@
 //#import "STHTTPManager.h"
 #import "UIBarButtonItem+STExtension.h"
 
+#import "STConst.h"
 #import "STEasyMacro.h"
 #import "UIView+STExtension.h"
 #import <MJRefresh/MJRefresh.h>
