@@ -24,19 +24,26 @@
             <subviews>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GIo-yh-zoB">
                     <rect key="frame" x="0.0" y="20" width="375" height="40"/>
-                    <color key="backgroundColor" red="0.81504888919999996" green="0.81504888919999996" blue="0.81504888919999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="backgroundColor" red="0.99018247079999999" green="0.99018247079999999" blue="0.99018247079999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="K0G-Ni-0yU"/>
                     </constraints>
                 </scrollView>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nsh-0W-oxE">
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nsh-0W-oxE">
                     <rect key="frame" x="0.0" y="60" width="375" height="607"/>
-                    <color key="backgroundColor" red="0.26872166450000001" green="0.26872166450000001" blue="0.26872166450000001" alpha="0.4921049736" colorSpace="custom" customColorSpace="displayP3"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photoview_image_default_white" translatesAutoresizingMaskIntoConstraints="NO" id="fPo-HT-Byd">
+                            <rect key="frame" x="27.5" y="248.5" width="320" height="70"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </scrollView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="fPo-HT-Byd" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="5jM-7J-iCT"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Nsh-0W-oxE" secondAttribute="bottom" id="HMK-NN-Whx"/>
+                <constraint firstItem="fPo-HT-Byd" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Upg-QR-QNn"/>
                 <constraint firstItem="Nsh-0W-oxE" firstAttribute="top" secondItem="GIo-yh-zoB" secondAttribute="bottom" id="gjr-dK-xfG"/>
                 <constraint firstItem="GIo-yh-zoB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="jdt-ju-fGZ"/>
                 <constraint firstItem="Nsh-0W-oxE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ldi-yG-KXz"/>
@@ -47,4 +54,7 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
         </view>
     </objects>
+    <resources>
+        <image name="photoview_image_default_white" width="320" height="70"/>
+    </resources>
 </document>

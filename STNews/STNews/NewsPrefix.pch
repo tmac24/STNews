@@ -20,6 +20,7 @@
 #import <UIImageView+WebCache.h>
 #import <MJExtension/MJExtension.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>
+#import <AFNetworking/AFNetworking.h>
 
 #ifdef DEBUG
 #define STLog(...) NSLog(__VA_ARGS__)

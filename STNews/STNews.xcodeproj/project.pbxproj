@@ -11,6 +11,9 @@
 		1E2BD15120009AA5009DA12D /* NewsURLs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E2BD15020009AA5009DA12D /* NewsURLs.plist */; };
 		1E2BD1572000AAF9009DA12D /* NewsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E2BD1562000AAF9009DA12D /* NewsController.xib */; };
 		1E2BD15A2000AFAE009DA12D /* STTitleLablel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2BD1592000AFAE009DA12D /* STTitleLablel.m */; };
+		1E2BD15D2000CE9D009DA12D /* STNewsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2BD15C2000CE9D009DA12D /* STNewsViewModel.m */; };
+		1E2BD1602000CEFC009DA12D /* STNewsEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2BD15F2000CEFC009DA12D /* STNewsEntity.m */; };
+		1E2BD1642000D2A2009DA12D /* STHTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2BD1632000D2A2009DA12D /* STHTTPManager.m */; };
 		1E48A12A1FFF20E600D69ECF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E48A1291FFF20E600D69ECF /* AppDelegate.m */; };
 		1E48A12D1FFF20E600D69ECF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E48A12C1FFF20E600D69ECF /* ViewController.m */; };
 		1E48A1301FFF20E600D69ECF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E48A12E1FFF20E600D69ECF /* Main.storyboard */; };
@@ -42,6 +45,8 @@
 		1E48A19A1FFF5DF200D69ECF /* FindController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E48A1981FFF5DF200D69ECF /* FindController.xib */; };
 		1E48A19E1FFF5E0700D69ECF /* MineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E48A19C1FFF5E0700D69ECF /* MineController.m */; };
 		1E48A19F1FFF5E0700D69ECF /* MineController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E48A19D1FFF5E0700D69ECF /* MineController.xib */; };
+		1E85F5B520031CE700BD5F6B /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E85F5B420031CE700BD5F6B /* HttpTool.m */; };
+		1E85F5B820033E6300BD5F6B /* STNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E85F5B720033E6300BD5F6B /* STNewsCell.m */; };
 		1EF54ABD20006BA50020F767 /* NewsTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF54ABB20006BA50020F767 /* NewsTableController.m */; };
 		1EF54AC020006C7E0020F767 /* NewsTableController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EF54ABF20006C7E0020F767 /* NewsTableController.storyboard */; };
 		B7CABD316AC991F90C9F28D5 /* libPods-STNews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7774D32893984A247DD0F13D /* libPods-STNews.a */; };
@@ -64,6 +69,12 @@
 		1E2BD1562000AAF9009DA12D /* NewsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsController.xib; sourceTree = "<group>"; };
 		1E2BD1582000AFAE009DA12D /* STTitleLablel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STTitleLablel.h; sourceTree = "<group>"; };
 		1E2BD1592000AFAE009DA12D /* STTitleLablel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STTitleLablel.m; sourceTree = "<group>"; };
+		1E2BD15B2000CE9D009DA12D /* STNewsViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STNewsViewModel.h; sourceTree = "<group>"; };
+		1E2BD15C2000CE9D009DA12D /* STNewsViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STNewsViewModel.m; sourceTree = "<group>"; };
+		1E2BD15E2000CEFC009DA12D /* STNewsEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STNewsEntity.h; sourceTree = "<group>"; };
+		1E2BD15F2000CEFC009DA12D /* STNewsEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STNewsEntity.m; sourceTree = "<group>"; };
+		1E2BD1622000D2A2009DA12D /* STHTTPManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STHTTPManager.h; sourceTree = "<group>"; };
+		1E2BD1632000D2A2009DA12D /* STHTTPManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STHTTPManager.m; sourceTree = "<group>"; };
 		1E48A1251FFF20E600D69ECF /* STNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E48A1281FFF20E600D69ECF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1E48A1291FFF20E600D69ECF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -115,6 +126,10 @@
 		1E48A19B1FFF5E0700D69ECF /* MineController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineController.h; sourceTree = "<group>"; };
 		1E48A19C1FFF5E0700D69ECF /* MineController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineController.m; sourceTree = "<group>"; };
 		1E48A19D1FFF5E0700D69ECF /* MineController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineController.xib; sourceTree = "<group>"; };
+		1E85F5B320031CE700BD5F6B /* HttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpTool.h; sourceTree = "<group>"; };
+		1E85F5B420031CE700BD5F6B /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpTool.m; sourceTree = "<group>"; };
+		1E85F5B620033E6300BD5F6B /* STNewsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STNewsCell.h; sourceTree = "<group>"; };
+		1E85F5B720033E6300BD5F6B /* STNewsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STNewsCell.m; sourceTree = "<group>"; };
 		1EF54ABA20006BA50020F767 /* NewsTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsTableController.h; sourceTree = "<group>"; };
 		1EF54ABB20006BA50020F767 /* NewsTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsTableController.m; sourceTree = "<group>"; };
 		1EF54ABF20006C7E0020F767 /* NewsTableController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewsTableController.storyboard; sourceTree = "<group>"; };
@@ -147,6 +162,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E2BD1612000D280009DA12D /* NetManger */ = {
+			isa = PBXGroup;
+			children = (
+				1E2BD1622000D2A2009DA12D /* STHTTPManager.h */,
+				1E2BD1632000D2A2009DA12D /* STHTTPManager.m */,
+				1E85F5B320031CE700BD5F6B /* HttpTool.h */,
+				1E85F5B420031CE700BD5F6B /* HttpTool.m */,
+			);
+			path = NetManger;
+			sourceTree = "<group>";
+		};
 		1E48A11C1FFF20E600D69ECF = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +245,10 @@
 		1E48A1511FFF497A00D69ECF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1E2BD15B2000CE9D009DA12D /* STNewsViewModel.h */,
+				1E2BD15C2000CE9D009DA12D /* STNewsViewModel.m */,
+				1E2BD15E2000CEFC009DA12D /* STNewsEntity.h */,
+				1E2BD15F2000CEFC009DA12D /* STNewsEntity.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -226,6 +256,8 @@
 		1E48A1521FFF497A00D69ECF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1E85F5B620033E6300BD5F6B /* STNewsCell.h */,
+				1E85F5B720033E6300BD5F6B /* STNewsCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -248,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				1E48A1611FFF544700D69ECF /* Category */,
+				1E2BD1612000D280009DA12D /* NetManger */,
 				1E48A1561FFF51EA00D69ECF /* STEasyMacro.h */,
 				1E2BD14D20009955009DA12D /* STConst.h */,
 				1E2BD14E20009955009DA12D /* STConst.m */,
@@ -519,17 +552,22 @@
 				1E48A1681FFF544700D69ECF /* NSDate+STExtension.m in Sources */,
 				1E48A12D1FFF20E600D69ECF /* ViewController.m in Sources */,
 				1E48A12A1FFF20E600D69ECF /* AppDelegate.m in Sources */,
+				1E2BD1642000D2A2009DA12D /* STHTTPManager.m in Sources */,
 				1E48A13B1FFF20E600D69ECF /* main.m in Sources */,
 				1E48A1841FFF5BE600D69ECF /* STPushGuideView.m in Sources */,
+				1E85F5B520031CE700BD5F6B /* HttpTool.m in Sources */,
 				1E48A1941FFF5DC200D69ECF /* ReadController.m in Sources */,
 				1E2BD15A2000AFAE009DA12D /* STTitleLablel.m in Sources */,
+				1E2BD1602000CEFC009DA12D /* STNewsEntity.m in Sources */,
 				1E48A1331FFF20E600D69ECF /* STNews.xcdatamodeld in Sources */,
+				1E2BD15D2000CE9D009DA12D /* STNewsViewModel.m in Sources */,
 				1E2BD14F20009955009DA12D /* STConst.m in Sources */,
 				1E48A1851FFF5BE600D69ECF /* STTabBar.m in Sources */,
 				1E48A16A1FFF544700D69ECF /* UIView+STExtension.m in Sources */,
 				1E48A1691FFF544700D69ECF /* UIBarButtonItem+STExtension.m in Sources */,
 				1EF54ABD20006BA50020F767 /* NewsTableController.m in Sources */,
 				1E48A19E1FFF5E0700D69ECF /* MineController.m in Sources */,
+				1E85F5B820033E6300BD5F6B /* STNewsCell.m in Sources */,
 				1E48A16C1FFF560500D69ECF /* Foundation+Log.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

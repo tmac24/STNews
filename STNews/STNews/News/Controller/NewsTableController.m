@@ -7,23 +7,90 @@
 //
 
 #import "NewsTableController.h"
+#import "HttpTool.h"
+#import "STNewsEntity.h"
+#import "STNewsCell.h"
 
 @interface NewsTableController ()
+
+/** 新闻数据 */
+@property (nonatomic, strong) NSMutableArray *news;
+@property (strong, nonatomic) IBOutlet UITableView *mytableView;
 
 @end
 
 @implementation NewsTableController
 
-
+- (NSMutableArray *)news {
+    
+    if (!_news) {
+        _news = [NSMutableArray array];
+    }
+    return _news;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    self.tableView.backgroundColor = [UIColor whiteColor];
+    //添加新控件
+    [self setupRefresh];
+}
+
+- (void)setupRefresh {
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewTopics)];
+    //自动更新透明度
+    self.tableView.mj_header.automaticallyChangeAlpha = YES;
+    [self.tableView.mj_header beginRefreshing];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreTopics)];
+    
+}
+
+- (void)loadNewTopics {
+    
+    [self.tableView.mj_footer endRefreshing];
+
+    NSString *path = [NSString stringWithFormat:@"/nc/article/%@/0-20.html", self.urlString];
+    // http://c.m.163.com//nc/article/list/list/T1348649145984/0-20.html
+    [HttpTool getWithPath:path params:nil success:^(NSDictionary *json) {
+        NSString *key = [json.keyEnumerator nextObject];
+        NSArray *temArray = json[key];
+//        NSLog(@"%@",temArray);
+        
+        self.news = [STNewsEntity mj_objectArrayWithKeyValuesArray:temArray];
+        
+        [self.tableView reloadData];
+        
+        [self.tableView.mj_header endRefreshing];
+        
+    } failure:^(NSError *error) {
+        [self.tableView.mj_header endRefreshing];
+    }];
+}
+
+- (void)loadMoreTopics {
+    
+        NSString *path = [NSString stringWithFormat:@"/nc/article/%@/%ld-20.html",self.urlString,(long)(self.news.count - self.news.count%10)];
+    
+    [HttpTool getWithPath:path params:nil success:^(NSDictionary *json) {
+        NSString *key = [json.keyEnumerator nextObject];
+        NSArray *temArray = json[key];
+//        NSLog(@"%@",temArray);
+        
+        NSArray *news = [STNewsEntity mj_objectArrayWithKeyValuesArray:temArray];
+        [self.news addObjectsFromArray:news];
+        
+        [self.tableView reloadData];
+        
+        [self.tableView.mj_footer endRefreshing];
+
+        
+    } failure:^(NSError *error) {
+        [self.tableView.mj_footer endRefreshing];
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,84 +100,31 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+//    self.tableView.mj_footer.hidden = (self.news.count == 0);
+    return self.news.count;
 }
-
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
+  
+    STNewsEntity *newsModel = self.news[indexPath.row];
+    NSString *ID = [STNewsCell idForRow:newsModel];
+    if ((indexPath.row%20 == 0)&&(indexPath.row != 0)) {
+        ID = @"NewsCell";
+    }
+    STNewsCell * cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    cell.NewsModel = newsModel;
     
     return cell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    STNewsEntity *newsModel = self.news[indexPath.row];
+    CGFloat rowHeight = [STNewsCell heightForRow:newsModel];
+    if ((indexPath.row%20 == 0)&&(indexPath.row != 0)) {
+        rowHeight = 80;
+    }
+    return rowHeight;
 }
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Table view delegate
-
-// In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Navigation logic may go here, for example:
-    // Create the next view controller.
-    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:<#@"Nib name"#> bundle:nil];
-    
-    // Pass the selected object to the new view controller.
-    
-    // Push the view controller.
-    [self.navigationController pushViewController:detailViewController animated:YES];
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

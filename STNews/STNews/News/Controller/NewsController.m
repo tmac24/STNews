@@ -36,8 +36,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    self.bigScrollView.delegate = self;
-
     //设置导航栏
     [self setNav];
     
@@ -54,6 +52,8 @@
 #pragma mark - 初始化视图
 /** 设置底部ScrollView */
 - (void)setupContentView {
+   
+    self.bigScrollView.delegate = self;
     
     CGFloat contentX = self.childViewControllers.count * [UIScreen mainScreen].bounds.size.width;
     self.bigScrollView.contentSize = CGSizeMake(contentX, 0);
@@ -114,10 +114,9 @@
 - (void)setupChildVces {
     
     for (int i = 0; i < self.arrayLists.count; i ++) {
-        NewsTableController *newVC = [[NewsTableController alloc] init];
+        NewsTableController *newVC = [[UIStoryboard storyboardWithName:@"NewsTableController" bundle:[NSBundle mainBundle]] instantiateInitialViewController];
         newVC.title = self.arrayLists[i][@"title"];
         newVC.urlString = self.arrayLists[i][@"urlString"];
-        newVC.view.backgroundColor = STRGBColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256));
         [self addChildViewController:newVC];
     }
 }
@@ -131,7 +130,7 @@
     self.needScrollToTopPage.tableView.scrollsToTop = YES;
 }
 
-#pragma mark - ******************** scrollView代理方法
+#pragma mark - scrollView代理方法
 /** 滚动结束后调用（代码导致） */
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView
 {
@@ -157,7 +156,6 @@
     newsVc.index = index;
     
     [self.smallScrollView.subviews enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        NSLog(@"%@",self.smallScrollView.subviews);
         if (idx != index) {
             STTitleLablel *temlabel = self.smallScrollView.subviews[idx];
             temlabel.scale = 0.0;

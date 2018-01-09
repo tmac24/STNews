@@ -19,16 +19,16 @@
         <scene sceneID="cwo-MN-ZKx">
             <objects>
                 <tableViewController id="nsE-qS-0IM" customClass="NewsTableController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jMQ-RP-kT5">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="72" sectionHeaderHeight="22" sectionFooterHeight="28" id="jMQ-RP-kT5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="newsCell" rowHeight="80" id="kkt-el-Skh" userLabel="newsCell">
-                                <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsCell" rowHeight="80" id="kkt-el-Skh" userLabel="newsCell" customClass="STNewsCell">
+                                <rect key="frame" x="0.0" y="22" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kkt-el-Skh" id="A4F-DG-J2d">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="796-FG-EGv">
@@ -89,12 +89,18 @@
                                         <constraint firstItem="GUT-Jd-59y" firstAttribute="bottom" secondItem="pex-p0-Ou0" secondAttribute="bottom" id="vxF-g9-efT"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imgIcon" destination="796-FG-EGv" id="aFm-VL-2sg"/>
+                                    <outlet property="lblReply" destination="pex-p0-Ou0" id="4Wb-ZD-FgY"/>
+                                    <outlet property="lblSubtitle" destination="BjZ-6X-JaO" id="MuZ-xG-Mw8"/>
+                                    <outlet property="lblTitle" destination="cl6-aa-CsL" id="XUk-J3-vCB"/>
+                                </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BigImageCell" rowHeight="170" id="qXw-vI-6H6" userLabel="BigImageCell">
-                                <rect key="frame" x="0.0" y="108" width="375" height="170"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BigImageCell" rowHeight="170" id="qXw-vI-6H6" userLabel="BigImageCell" customClass="STNewsCell">
+                                <rect key="frame" x="0.0" y="102" width="375" height="170"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qXw-vI-6H6" id="lQE-aU-pXZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="169.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTa-H1-rOb">
@@ -134,12 +140,17 @@
                                         <constraint firstAttribute="trailing" secondItem="WF9-lW-zDJ" secondAttribute="trailing" id="y4J-TS-qkO"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imgIcon" destination="9sn-Mo-XOP" id="FtU-xo-Pew"/>
+                                    <outlet property="lblSubtitle" destination="tWH-XS-mGa" id="Uv6-Ez-sVG"/>
+                                    <outlet property="lblTitle" destination="kTa-H1-rOb" id="gNx-Ng-Z0u"/>
+                                </connections>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImagesCell" rowHeight="130" id="eId-P9-Ir4" customClass="SXNewsCell">
-                                <rect key="frame" x="0.0" y="278" width="375" height="130"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImagesCell" rowHeight="130" id="eId-P9-Ir4" customClass="STNewsCell">
+                                <rect key="frame" x="0.0" y="272" width="375" height="130"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eId-P9-Ir4" id="1OP-hT-nPN">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="129.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1G-MR-fQ7">
@@ -203,18 +214,18 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="imgIcon" destination="dd1-BQ-VWm" id="4es-23-yNd"/>
-                                    <outlet property="imgOther1" destination="aEK-KI-Iob" id="OG1-ly-oYD"/>
-                                    <outlet property="imgOther2" destination="2Cv-z6-smQ" id="YF7-ex-fZ8"/>
-                                    <outlet property="lblReply" destination="0cg-bk-m1P" id="ctJ-G8-sgr"/>
-                                    <outlet property="lblTitle" destination="V1G-MR-fQ7" id="013-fI-IuQ"/>
+                                    <outlet property="imgIcon" destination="dd1-BQ-VWm" id="jMg-fZ-dzi"/>
+                                    <outlet property="imgOther1" destination="aEK-KI-Iob" id="fQJ-be-bze"/>
+                                    <outlet property="imgOther2" destination="2Cv-z6-smQ" id="eNa-jw-7fD"/>
+                                    <outlet property="lblReply" destination="0cg-bk-m1P" id="4LO-NV-6jh"/>
+                                    <outlet property="lblTitle" destination="V1G-MR-fQ7" id="akI-4B-ie2"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TopImageCell" rowHeight="215" id="VAs-CZ-bUV" customClass="SXNewsCell">
-                                <rect key="frame" x="0.0" y="408" width="375" height="215"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TopImageCell" rowHeight="215" id="VAs-CZ-bUV" customClass="STNewsCell">
+                                <rect key="frame" x="0.0" y="402" width="375" height="215"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VAs-CZ-bUV" id="z5y-m9-mXs">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="214.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="215"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aKY-sr-p9x">
@@ -276,15 +287,15 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="imgIcon" destination="aKY-sr-p9x" id="fYv-yT-bxa"/>
-                                    <outlet property="lblTitle" destination="tk6-g0-SJO" id="wqK-h8-x5u"/>
+                                    <outlet property="imgIcon" destination="aKY-sr-p9x" id="XbR-KT-bwA"/>
+                                    <outlet property="lblTitle" destination="tk6-g0-SJO" id="tGo-C5-QHw"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TopTxtCell" rowHeight="245" id="ci3-Q3-YnH" customClass="SXNewsCell">
-                                <rect key="frame" x="0.0" y="623" width="375" height="245"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TopTxtCell" rowHeight="245" id="ci3-Q3-YnH" customClass="STNewsCell">
+                                <rect key="frame" x="0.0" y="617" width="375" height="245"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ci3-Q3-YnH" id="NO7-wQ-qFu">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="244.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="245"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OZv-iE-H9h">
@@ -342,8 +353,8 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="imgIcon" destination="OZv-iE-H9h" id="SHW-fx-uia"/>
-                                    <outlet property="lblTitle" destination="Dfm-k9-OES" id="Upz-ew-HSA"/>
+                                    <outlet property="imgIcon" destination="OZv-iE-H9h" id="gqF-Cz-9dN"/>
+                                    <outlet property="lblTitle" destination="Dfm-k9-OES" id="LGw-Hh-0Mn"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
