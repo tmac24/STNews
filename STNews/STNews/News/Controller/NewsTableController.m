@@ -57,8 +57,6 @@
     [HttpTool getWithPath:path params:nil success:^(NSDictionary *json) {
         NSString *key = [json.keyEnumerator nextObject];
         NSArray *temArray = json[key];
-//        NSLog(@"%@",temArray);
-        
         self.news = [STNewsEntity mj_objectArrayWithKeyValuesArray:temArray];
         
         [self.tableView reloadData];
@@ -72,20 +70,18 @@
 
 - (void)loadMoreTopics {
     
-        NSString *path = [NSString stringWithFormat:@"/nc/article/%@/%ld-20.html",self.urlString,(long)(self.news.count - self.news.count%10)];
+    NSString *path = [NSString stringWithFormat:@"/nc/article/%@/%ld-20.html",self.urlString,(long)(self.news.count - self.news.count%10)];
     
     [HttpTool getWithPath:path params:nil success:^(NSDictionary *json) {
         NSString *key = [json.keyEnumerator nextObject];
         NSArray *temArray = json[key];
-//        NSLog(@"%@",temArray);
         
         NSArray *news = [STNewsEntity mj_objectArrayWithKeyValuesArray:temArray];
         [self.news addObjectsFromArray:news];
-        
         [self.tableView reloadData];
         
         [self.tableView.mj_footer endRefreshing];
-
+        
         
     } failure:^(NSError *error) {
         [self.tableView.mj_footer endRefreshing];
@@ -101,7 +97,7 @@
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//    self.tableView.mj_footer.hidden = (self.news.count == 0);
+    self.tableView.mj_footer.hidden = (self.news.count == 0);
     return self.news.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

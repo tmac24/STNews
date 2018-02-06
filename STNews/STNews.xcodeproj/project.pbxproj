@@ -15,7 +15,6 @@
 		1E2BD1602000CEFC009DA12D /* STNewsEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2BD15F2000CEFC009DA12D /* STNewsEntity.m */; };
 		1E2BD1642000D2A2009DA12D /* STHTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2BD1632000D2A2009DA12D /* STHTTPManager.m */; };
 		1E48A12A1FFF20E600D69ECF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E48A1291FFF20E600D69ECF /* AppDelegate.m */; };
-		1E48A12D1FFF20E600D69ECF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E48A12C1FFF20E600D69ECF /* ViewController.m */; };
 		1E48A1301FFF20E600D69ECF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E48A12E1FFF20E600D69ECF /* Main.storyboard */; };
 		1E48A1331FFF20E600D69ECF /* STNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1E48A1311FFF20E600D69ECF /* STNews.xcdatamodeld */; };
 		1E48A1351FFF20E600D69ECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E48A1341FFF20E600D69ECF /* Assets.xcassets */; };
@@ -78,8 +77,6 @@
 		1E48A1251FFF20E600D69ECF /* STNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E48A1281FFF20E600D69ECF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1E48A1291FFF20E600D69ECF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1E48A12B1FFF20E600D69ECF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1E48A12C1FFF20E600D69ECF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1E48A12F1FFF20E600D69ECF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1E48A1321FFF20E600D69ECF /* STNews.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = STNews.xcdatamodel; sourceTree = "<group>"; };
 		1E48A1341FFF20E600D69ECF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -265,8 +262,6 @@
 		1E48A1531FFF498300D69ECF /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				1E48A12B1FFF20E600D69ECF /* ViewController.h */,
-				1E48A12C1FFF20E600D69ECF /* ViewController.m */,
 				1E48A1341FFF20E600D69ECF /* Assets.xcassets */,
 				1E48A1361FFF20E600D69ECF /* LaunchScreen.storyboard */,
 				1E48A13A1FFF20E600D69ECF /* main.m */,
@@ -550,7 +545,6 @@
 				1E48A18F1FFF5DA200D69ECF /* ListenController.m in Sources */,
 				1E48A1791FFF577600D69ECF /* STNavigationController.m in Sources */,
 				1E48A1681FFF544700D69ECF /* NSDate+STExtension.m in Sources */,
-				1E48A12D1FFF20E600D69ECF /* ViewController.m in Sources */,
 				1E48A12A1FFF20E600D69ECF /* AppDelegate.m in Sources */,
 				1E2BD1642000D2A2009DA12D /* STHTTPManager.m in Sources */,
 				1E48A13B1FFF20E600D69ECF /* main.m in Sources */,
