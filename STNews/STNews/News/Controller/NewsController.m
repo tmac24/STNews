@@ -192,7 +192,7 @@
         STTitleLablel *labelRight = self.smallScrollView.subviews[rightIndex];
         labelRight.scale = scaleRight;
     }
-    
+
 }
 
 #pragma mark - 导航栏
